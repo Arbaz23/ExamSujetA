@@ -13,6 +13,7 @@ class Vehicule:
             return False
         return True
 
+
     def couleurValide(self):
         if self.couleur=="blanche":
             return True
