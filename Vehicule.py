@@ -1,3 +1,4 @@
+From Immatriculation import Immatriculation
 
 class Vehicule:
     def __init__(self, marque, modele, prix, couleur, immatriculation):
@@ -5,7 +6,7 @@ class Vehicule:
         self.modele=modele
         self.prix=prix
         self.couleur=couleur
-        self.immatriculation=immatriculation
+        self.immatriculation=Immatriculation(immatriculation)
 
     def marqueValide(self):
         if self.marque=="FakeBrand":
@@ -20,4 +21,7 @@ class Vehicule:
         if self.couleur=="noire":
             return True
         return False
+
+    def immaValide(self):
+        return self.immatriculation.is_valid()
         
