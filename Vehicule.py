@@ -1,4 +1,4 @@
-From Immatriculation import Immatriculation
+from Immatriculation import Immatriculation
 
 class Vehicule:
     def __init__(self, marque, modele, prix, couleur, immatriculation):
