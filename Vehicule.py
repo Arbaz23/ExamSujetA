@@ -25,4 +25,14 @@ class Vehicule:
 
     def immaValide(self):
         return self.immatriculation.is_valid()
+
+    def vehiculevalid(self):
+       if self.marqueValide()==False :
+           return False
+       if self.immaValide()==False :
+           return False
+       if self.couleurValide==False :
+           return False
+       return True
+        
         
