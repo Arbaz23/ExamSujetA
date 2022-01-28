@@ -6,4 +6,9 @@ class Vehicule:
         self.prix=prix
         self.couleur=couleur
         self.immatriculation=immatriculation
+
+    def marqueValide(self):
+        if self.marque=="FakeBrand":
+            return False
+        return True
         
